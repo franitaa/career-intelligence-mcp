@@ -92,27 +92,120 @@ and NCBI attribution in downstream work:
 
 ## Setup
 
+### 1. Clone the repository
+
 ```bash
-cd /Users/francesca/Projects/career-intelligence-mcp
-source .venv/bin/activate
+git clone https://github.com/franitaa/career-intelligence-mcp.git
+cd career-intelligence-mcp
+```
+
+### 2. Install `uv`
+
+On macOS with Homebrew:
+
+```bash
+brew install uv
+```
+
+Verify that it is available:
+
+```bash
+uv --version
+```
+
+### 3. Install dependencies
+
+From the repository directory, run:
+
+```bash
 uv sync
 ```
 
-The direct dependencies are listed in `requirements.txt`; `uv.lock` records the
-complete resolved dependency graph.
+`uv sync` creates or updates the project environment from `pyproject.toml` and
+the locked dependency graph in `uv.lock`. The direct dependencies are also
+listed in `requirements.txt` for reference.
 
-Run the server over stdio for an MCP host:
-
-```bash
-uv run python server.py
-```
-
-The included `claude_desktop_config.json` points Claude Desktop at this project.
-
-Run the tests with:
+### 4. Run the tests
 
 ```bash
 uv run pytest
+```
+
+All tests should pass before connecting the server to an MCP client.
+
+### 5. Configure Claude Desktop
+
+Claude Desktop reads its MCP configuration from:
+
+```text
+~/Library/Application Support/Claude/claude_desktop_config.json
+```
+
+Create the directory and open the configuration file if needed:
+
+```bash
+mkdir -p "$HOME/Library/Application Support/Claude"
+open -a TextEdit "$HOME/Library/Application Support/Claude/claude_desktop_config.json"
+```
+
+Add this configuration. Replace the `--directory` path if the repository is
+stored somewhere else:
+
+```json
+{
+	"mcpServers": {
+		"career-intelligence": {
+			"command": "/opt/homebrew/bin/uv",
+			"args": [
+				"run",
+				"--directory",
+				"/Users/francesca/Projects/career-intelligence-mcp",
+				"python",
+				"server.py"
+			]
+		}
+	}
+}
+```
+
+For Apple Silicon Macs, Homebrew normally installs `uv` at
+`/opt/homebrew/bin/uv`. Confirm the path with `command -v uv` and update the
+`command` value if necessary. The repository's
+`claude_desktop_config.json` is a project-local example; Claude Desktop reads
+the configuration file in its Application Support directory.
+
+Validate the JSON configuration:
+
+```bash
+python3 -m json.tool "$HOME/Library/Application Support/Claude/claude_desktop_config.json"
+```
+
+### 6. Restart Claude Desktop
+
+Fully quit Claude Desktop with `Cmd+Q`, then reopen it. Enable the
+`career-intelligence` connector if Claude asks for permission. The server runs
+over MCP stdio; no web server or separate port is required.
+
+### 7. Test the server
+
+Use a public job-posting URL that does not require login, CAPTCHA, or browser
+automation. In a new Claude Desktop chat, ask:
+
+```text
+Use the career-intelligence MCP tools to analyze this public job posting:
+https://example.com/job-posting
+```
+
+For interview preparation, ask Claude to call `analyze_job_posting`, then
+`match_candidate_to_job`, formulate focused PubMed queries, and call
+`search_pubmed`. For a cover letter, ask it to call the same first two tools
+and use only the returned candidate evidence. The `cover_letter` and
+`interview_prep` workflows are separate.
+
+To run the server directly for an MCP host or local debugging:
+
+```bash
+uv run python server.py
 ```
 
 ## Planned scope
