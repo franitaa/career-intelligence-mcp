@@ -1,0 +1,7 @@
+# Runtime dependencies
+mcp==2.2.0
+httpx==0.28.1
+beautifulsoup4==4.15.0
+
+# Test dependency
+pytest==9.1.1

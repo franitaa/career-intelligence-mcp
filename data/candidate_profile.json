@@ -1,0 +1,484 @@
+{
+  "candidate": {
+    "name": "Francesca Rondinella"
+  },
+  "evidence": [
+    {
+      "id": "EDU_CORNELL_01",
+      "type": "education",
+      "organization": "Cornell University",
+      "role": null,
+      "title": "Biomedical Engineering M.Eng.",
+      "text": "Biomedical Engineering M.Eng. - Lester B. Knight Scholar and Richard G. Buckles Memorial Fellow",
+      "tags": ["degree", "scholarship"]
+    },
+    {
+      "id": "EDU_CORNELL_02",
+      "type": "education",
+      "organization": "Cornell University",
+      "role": null,
+      "title": "Relevant coursework",
+      "text": "Relevant coursework: Biorobotics, Applied AI for Technical Teams, Product Management, Innovation & Design of Biomedical Technologies, Neural Network Design, Philosophy for Anti- or Non-Philosophers",
+      "tags": ["coursework", "AI", "product management", "robotics"]
+    },
+    {
+      "id": "EDU_CORNELL_03",
+      "type": "education",
+      "organization": "Cornell University",
+      "role": null,
+      "title": "Activities",
+      "text": "Activities: Marketing Associate at the Graduate Product Management Club; Editorial Writer for Thread Magazine",
+      "tags": ["activities", "product management", "writing", "marketing"]
+    },
+    {
+      "id": "EDU_ITBA_01",
+      "type": "education",
+      "organization": "Instituto Tecnológico de Buenos Aires",
+      "role": null,
+      "title": "Bioengineer (BSc & MSc)",
+      "text": "Bioengineer (BSc & MSc), with honors obtained in December 2024",
+      "tags": ["degree", "honors"]
+    },
+    {
+      "id": "EDU_ITBA_02",
+      "type": "education",
+      "organization": "Instituto Tecnológico de Buenos Aires",
+      "role": null,
+      "title": "Grade",
+      "text": "Grade: 8.41/10 - 3.8 GPA",
+      "tags": ["GPA"]
+    },
+    {
+      "id": "EDU_ITBA_03",
+      "type": "education",
+      "organization": "Instituto Tecnológico de Buenos Aires",
+      "role": null,
+      "title": "Relevant coursework",
+      "text": "Relevant coursework: Biotechnology, Biomaterials, Biosignal & Bioimage Processing, Computational Neuroscience",
+      "tags": ["coursework", "biotech", "signal processing", "neuroscience"]
+    },
+    {
+      "id": "EDU_POLIMI_01",
+      "type": "education",
+      "organization": "Politecnico di Milano",
+      "role": null,
+      "title": "Global Engineering Education Exchange (GE3)",
+      "text": "Global Engineering Education Exchange (GE3), Spring Semester 2023",
+      "tags": ["exchange", "international"]
+    },
+    {
+      "id": "EDU_POLIMI_02",
+      "type": "education",
+      "organization": "Politecnico di Milano",
+      "role": null,
+      "title": null,
+      "text": "Selected to participate in the GE3 exchange program along with 300 other students around the world",
+      "tags": ["exchange", "selective", "international"]
+    },
+    {
+      "id": "EDU_POLIMI_03",
+      "type": "education",
+      "organization": "Politecnico di Milano",
+      "role": null,
+      "title": "Relevant coursework",
+      "text": "Relevant coursework: Biochip, Biomachines, Nanomedicine and Pharmaceutical Innovation, Medical Informatics",
+      "tags": ["coursework", "nanomedicine", "medical informatics"]
+    },
+    {
+      "id": "EXP_TOUCHDOWN_01",
+      "type": "experience",
+      "organization": "Touchdown Medical Technologies, Cornell University",
+      "role": "Design Engineer",
+      "title": null,
+      "text": "Lead requirements-gathering across clinical, manufacturing, and commercial stakeholders at industry partner SHL Medical, in order to generate product specifications for a novel drug delivery system",
+      "tags": ["requirements", "stakeholders", "product management", "drug delivery", "cross-functional"]
+    },
+    {
+      "id": "EXP_TOUCHDOWN_02",
+      "type": "experience",
+      "organization": "Touchdown Medical Technologies, Cornell University",
+      "role": "Design Engineer",
+      "title": null,
+      "text": "Own prototyping and iterative design cycles, defining and executing verification & validation protocols against mechanical and fluid-dynamics specifications to de-risk and optimize manufacturability",
+      "tags": ["prototyping", "verification and validation", "design engineering", "manufacturability"]
+    },
+    {
+      "id": "EXP_MBMED_01",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Increased sales by 30% through technical expertise, customer needs assessment, and strategic collaboration with healthcare providers to identify and implement tailored medical technology solutions",
+      "tags": ["sales", "customer needs", "commercial", "healthcare providers", "quantified result"]
+    },
+    {
+      "id": "EXP_MBMED_02",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Led cross-functional coordination of the multinational PRACTICAL and CAVIARDS clinical studies, managing ethics committee submissions, contracts, and site monitoring while ensuring protocol compliance across stakeholders",
+      "tags": ["clinical trials", "project management", "ethics", "contracts", "monitoring", "multinational"]
+    },
+    {
+      "id": "EXP_MBMED_03",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Drove regulatory initiatives supporting FDA, CE, ISO 13485, and MDSAP compliance, contributing to product certification and international market expansion across the Americas, Asia, and Europe",
+      "tags": ["regulatory", "FDA", "CE", "ISO 13485", "MDSAP", "certification", "international"]
+    },
+    {
+      "id": "EXP_MBMED_04",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Supported the deployment of 100+ respiratory monitoring devices in large scale research programs, such as the PREVENT VILI, which is the biggest NIH-funded study on mechanical ventilation to date",
+      "tags": ["deployment", "respiratory", "NIH", "research", "quantified result"]
+    },
+    {
+      "id": "EXP_MBMED_05",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Defined validation protocols for a novel algorithm that computes breath-by-breath calculation of airway resistance, which is key to assess and monitor lung function during mechanical ventilation",
+      "tags": ["validation", "algorithm", "respiratory", "signal processing", "technical"]
+    },
+    {
+      "id": "EXP_MBMED_06",
+      "type": "experience",
+      "organization": "MBMed",
+      "role": "Clinical Trials Project Manager & Product Specialist",
+      "title": null,
+      "text": "Led education initiatives through the Fluxmed Academy, designing and delivering training materials for healthcare professionals to support correct device use and adoption in resource-variable clinical settings",
+      "tags": ["training", "education", "enablement", "adoption", "healthcare professionals"]
+    },
+    {
+      "id": "EXP_CNEA_01",
+      "type": "experience",
+      "organization": "National Atomic Energy Commission (CNEA)",
+      "role": "Thesis researcher, Micro and Nanotechnology Department",
+      "title": null,
+      "text": "Led the end-to-end development of a microfluidic device for controlled production of theranostic microbubbles, including device design, fabrication, experimental validation, and performance optimization",
+      "tags": ["R&D", "microfluidics", "device design", "fabrication", "end-to-end", "research"]
+    },
+    {
+      "id": "EXP_CNEA_02",
+      "type": "experience",
+      "organization": "National Atomic Energy Commission (CNEA)",
+      "role": "Thesis researcher, Micro and Nanotechnology Department",
+      "title": null,
+      "text": "Authored research and development protocols aligned with ISO 13485 and ISO 14971, incorporating risk management principles to support safe and scalable biomedical device development",
+      "tags": ["ISO 13485", "ISO 14971", "risk management", "protocols", "quality"]
+    },
+    {
+      "id": "EXP_BI_01",
+      "type": "experience",
+      "organization": "Boehringer Ingelheim",
+      "role": "Medical Affairs Operations Intern",
+      "title": null,
+      "text": "Designed and implemented a Microsoft PowerApps workflow that streamlined Medical Affairs operations and improved internal and cross-functional collaboration",
+      "tags": ["PowerApps", "workflow automation", "operations", "pharma", "process improvement"]
+    },
+    {
+      "id": "EXP_BI_02",
+      "type": "experience",
+      "organization": "Boehringer Ingelheim",
+      "role": "Medical Affairs Operations Intern",
+      "title": null,
+      "text": "Automated Power BI dashboards tracking performance metrics for more than 60 Medical Science Liaisons, improving reporting efficiency and supporting data-driven decision making",
+      "tags": ["Power BI", "dashboards", "data analytics", "reporting", "medical affairs", "quantified result"]
+    },
+    {
+      "id": "EXP_BI_03",
+      "type": "experience",
+      "organization": "Boehringer Ingelheim",
+      "role": "Medical Affairs Operations Intern",
+      "title": null,
+      "text": "Spearheaded strategic planning initiatives by developing annual and quarterly operating plans, workshop materials, RACI matrices, and SWOT analyses to improve organizational alignment and execution",
+      "tags": ["strategy", "planning", "operating plans", "RACI", "SWOT", "consulting"]
+    },
+    {
+      "id": "PROJ_BIOROBOT",
+      "type": "project",
+      "organization": "Cornell University",
+      "role": null,
+      "title": "Biorobotics",
+      "text": "Biorobotics, Cornell University (ongoing): developing an autonomous water-surface robot with embedded Machine Learning target identification and capture",
+      "tags": ["robotics", "machine learning", "embedded", "autonomous"]
+    },
+    {
+      "id": "PROJ_BIOSOUNDER",
+      "type": "project",
+      "organization": "Independent",
+      "role": null,
+      "title": "Biosounder",
+      "text": "Biosounder, Independent (ongoing): developing an AI-assisted platform integrating Arduino and Python for sound design based on real-time environmental data acquisition",
+      "tags": ["AI", "Arduino", "Python", "data acquisition", "creative technology"]
+    },
+    {
+      "id": "PROJ_HEARTKIT",
+      "type": "project",
+      "organization": "Stanford University Frugal Science",
+      "role": null,
+      "title": "Accessible Heart Health Kit",
+      "text": "Accessible Heart Health Kit, Stanford University Frugal Science (2026): designed and prototyped a low-cost ECG-based heart health solution with an international multidisciplinary team to improve access to cardiovascular screening",
+      "tags": ["ECG", "frugal innovation", "prototyping", "global health", "cardiovascular", "teamwork"]
+    },
+    {
+      "id": "PROJ_EPICARE",
+      "type": "project",
+      "organization": "ITBA",
+      "role": null,
+      "title": "EPIcare",
+      "text": "EPIcare, ITBA (2023): co-developed a wearable device and mobile platform using electrodermal activity and accelerometer data to detect and predict potential seizure events, with real-time location alerts and cloud-based storage of metrics",
+      "tags": ["wearable", "digital health", "epilepsy", "mobile", "sensors", "cloud"]
+    },
+    {
+      "id": "PROJ_ECOWHEEL",
+      "type": "project",
+      "organization": "ITBA",
+      "role": null,
+      "title": "Eco-Wheelchairs Social Startup",
+      "text": "Eco-Wheelchairs Social Startup, ITBA (2022): created a circular-economy business model converting recycled plastic into affordable wheelchairs; performed SWOT and Porter analyses, and defined main KPIs for the company",
+      "tags": ["entrepreneurship", "business model", "sustainability", "KPIs", "strategy", "social impact"]
+    },
+    {
+      "id": "PRES_01",
+      "type": "presentation",
+      "organization": "ITBA",
+      "role": null,
+      "title": "Innovation in medicine through microfabrication",
+      "text": "Innovation in medicine through microfabrication - led a workshop for 80 people during ITBA Future Day 2025",
+      "tags": ["workshop", "microfabrication", "public speaking"]
+    },
+    {
+      "id": "PRES_02",
+      "type": "presentation",
+      "organization": "ITBA's Health & Technology Conference",
+      "role": null,
+      "title": "Microbubbles: big solutions",
+      "text": "Microbubbles: big solutions - led a workshop for 40 professionals at ITBA's Health & Technology Conference 2025",
+      "tags": ["workshop", "microbubbles", "professionals", "public speaking"]
+    },
+    {
+      "id": "PRES_03",
+      "type": "presentation",
+      "organization": "National Atomic Energy Commission",
+      "role": null,
+      "title": "The technology behind microbubbles",
+      "text": "The technology behind microbubbles, seminar presented at the National Atomic Energy Commission in 2024",
+      "tags": ["seminar", "microbubbles", "research"]
+    },
+    {
+      "id": "PRES_04",
+      "type": "presentation",
+      "organization": "ITBA's Health & Technology Conference",
+      "role": null,
+      "title": "EPIcare: novel way to monitor epilepsy",
+      "text": "EPIcare: novel way to monitor epilepsy, poster presented at ITBA's Health & Technology Conference 2024",
+      "tags": ["poster", "epilepsy", "digital health"]
+    },
+    {
+      "id": "COMM_DFS_01",
+      "type": "community",
+      "organization": "Dear Future Scientist, Cornell University",
+      "role": "Volunteer",
+      "title": null,
+      "text": "Exchange letters with middle school students across the US to motivate and promote interest in STEM topics",
+      "tags": ["volunteering", "STEM", "mentoring", "education"]
+    },
+    {
+      "id": "COMM_CREE_01",
+      "type": "community",
+      "organization": "Proyecto Fundación Cree, Buenos Aires, Argentina",
+      "role": "Volunteer",
+      "title": null,
+      "text": "Organized recreational programming and fundraising events for a care center for adults with Down syndrome",
+      "tags": ["volunteering", "fundraising", "event organization", "community"]
+    },
+    {
+      "id": "SKILLS_PROG_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Programming & Automation",
+      "text": "Programming & Automation: Python, Java, C, MATLAB, Arduino, n8n, LangGraph, LaTeX",
+      "tags": ["programming", "coding", "Python", "automation", "n8n"]
+    },
+    {
+      "id": "SKILLS_DESIGN_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Design & Engineering Software",
+      "text": "Design & Engineering Software: SolidWorks, Siemens NX, LTSpice, KLayout",
+      "tags": ["CAD", "SolidWorks", "Siemens NX", "circuit simulation", "mechanical design"]
+    },
+    {
+      "id": "SKILLS_MOL_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Molecular Modeling",
+      "text": "Molecular Modeling: Visual Molecular Dynamics (VMD), Avogadro, ChimeraX",
+      "tags": ["molecular modeling", "computational biology", "simulation"]
+    },
+    {
+      "id": "SKILLS_AI_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "AI Skills",
+      "text": "AI Skills: agent workflows, skills, AI cost efficiency, context management strategies, MCP, prompt engineering",
+      "tags": ["AI", "agents", "LLM", "MCP", "prompt engineering"]
+    },
+    {
+      "id": "SKILLS_PM_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Product Management",
+      "text": "Product Management: user research, requirements definition, cross-functional stakeholder management, market analysis, technical training & enablement",
+      "tags": ["product management", "user research", "requirements", "stakeholders", "market analysis"]
+    },
+    {
+      "id": "SKILLS_REG_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Regulatory & Quality",
+      "text": "Regulatory & Quality: design controls, risk management (ISO 14971), regulatory strategy (FDA, CE, ISO 13485, MDSAP), verification & validation",
+      "tags": ["regulatory", "quality", "design controls", "ISO", "FDA", "V&V"]
+    },
+    {
+      "id": "SKILLS_LAB_01",
+      "type": "skill",
+      "organization": null,
+      "role": null,
+      "title": "Lab Skills",
+      "text": "Lab Skills: cleanroom safety measures, optical microscopy and profilometry, microfabrication techniques",
+      "tags": ["lab", "cleanroom", "microfabrication", "microscopy"]
+    },
+    {
+      "id": "LANG_01",
+      "type": "language",
+      "organization": null,
+      "role": null,
+      "title": "Languages",
+      "text": "Languages: Spanish (Native), Italian (Native), English (Fluent), French (Intermediate)",
+      "tags": ["languages", "multilingual"]
+    },
+    {
+      "id": "CERT_01",
+      "type": "certification",
+      "organization": "IBM",
+      "role": null,
+      "title": "AI Skills Accelerator",
+      "text": "IBM – AI Skills Accelerator",
+      "tags": ["AI"]
+    },
+    {
+      "id": "CERT_02",
+      "type": "certification",
+      "organization": "Harvard Medical School",
+      "role": null,
+      "title": "Cancer Genomics & Precision Oncology",
+      "text": "Harvard Medical School – Cancer Genomics & Precision Oncology",
+      "tags": ["genomics", "oncology", "precision medicine"]
+    },
+    {
+      "id": "CERT_03",
+      "type": "certification",
+      "organization": "Harvard Business Publishing",
+      "role": null,
+      "title": "Finance Fundamentals",
+      "text": "Harvard Business Publishing – Finance Fundamentals",
+      "tags": ["finance", "business"]
+    },
+    {
+      "id": "CERT_04",
+      "type": "certification",
+      "organization": "MIT",
+      "role": null,
+      "title": "Global Climate Seminar",
+      "text": "MIT – Global Climate Seminar",
+      "tags": ["climate", "sustainability"]
+    },
+    {
+      "id": "CERT_05",
+      "type": "certification",
+      "organization": null,
+      "role": null,
+      "title": "Ethical Conduct for Research Involving Humans",
+      "text": "Ethical Conduct for Research Involving Humans",
+      "tags": ["research ethics", "compliance"]
+    },
+    {
+      "id": "AWARD_01",
+      "type": "award",
+      "organization": "Cornell University",
+      "role": null,
+      "title": "Lester B. Knight Scholarship and Richard G. Buckles Memorial Fellowship",
+      "text": "Lester B. Knight Scholarship and Richard G. Buckles Memorial Fellowship - Cornell University (2026)",
+      "tags": ["scholarship", "award", "Cornell"]
+    },
+    {
+      "id": "AWARD_02",
+      "type": "award",
+      "organization": "ITBA",
+      "role": null,
+      "title": "Honor Diploma - Bioengineering",
+      "text": "Honor Diploma - Bioengineering at ITBA (2024)",
+      "tags": ["honors", "academic"]
+    },
+    {
+      "id": "AWARD_03",
+      "type": "award",
+      "organization": null,
+      "role": null,
+      "title": "Special Mention at the English Translation Olympiad",
+      "text": "Special Mention at the English Translation Olympiad (2018)",
+      "tags": ["olympiad", "language"]
+    },
+    {
+      "id": "AWARD_04",
+      "type": "award",
+      "organization": null,
+      "role": null,
+      "title": "Special Mention at the International Philosophy Olympiad",
+      "text": "Special Mention at the International Philosophy Olympiad (2017)",
+      "tags": ["olympiad", "philosophy"]
+    },
+    {
+      "id": "LIT_01",
+      "type": "creative_work",
+      "organization": "Librería del Fondo de Cultura Económica",
+      "role": null,
+      "title": "Published/exhibited poet",
+      "text": "Published/exhibited poet: selected as an upcoming poet to read at the Librería del Fondo de Cultura Económica (2025)",
+      "tags": ["poetry", "writing", "creative"]
+    },
+    {
+      "id": "LIT_02",
+      "type": "creative_work",
+      "organization": null,
+      "role": null,
+      "title": "Published/exhibited poet",
+      "text": "Published/exhibited poet: self-published fanzine \"Cinco poemas de la suerte\" (2026)",
+      "tags": ["poetry", "writing", "publishing", "creative"]
+    },
+    {
+      "id": "LIT_03",
+      "type": "creative_work",
+      "organization": "Primores Gallery",
+      "role": null,
+      "title": "Published/exhibited poet",
+      "text": "Published/exhibited poet: work exhibited at Primores Gallery in Buenos Aires (2022)",
+      "tags": ["poetry", "exhibition", "creative"]
+    }
+  ]
+}

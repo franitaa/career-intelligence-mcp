@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "career-intelligence": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/francesca/Projects/career-intelligence-mcp",
+        "python",
+        "server.py"
+      ]
+    }
+  }
+}
