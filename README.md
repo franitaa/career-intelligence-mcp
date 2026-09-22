@@ -1,13 +1,14 @@
 # Career Intelligence MCP
 
-Project scaffold for a university assignment that will explore an MCP server
-for structured career and research preparation.
+This project explores an MCP server for structured career and research preparation, more specifically it helps the user draft a cover letter or prepare for an interview by matching a job posting's URL information to candidate experience.
+
+Student name: Francesca Rondinella - NetID fr288
 
 ## Assignment Deliverables
 
 | Deliverable | Implementation |
 | --- | --- |
-| GitHub link | **Replace this placeholder with the repository URL:** `https://github.com/<your-username>/career-intelligence-mcp` |
+| GitHub link |  `https://github.com/franitaa/career-intelligence-mcp` |
 | Domain choice | Career intelligence for biomedical and technical job-search preparation, including job extraction, evidence-grounded matching, cover letters, interview preparation, and biomedical literature retrieval. |
 | Best practice 1 | **Separation of retrieval and reasoning:** Python validates and retrieves structured data; Claude performs synthesis and writing. |
 | Best practice 2 | **Security and bounded access:** public HTTP(S)-only job retrieval, SSRF protection, response/time limits, read-only candidate evidence, bounded PubMed requests, and model-readable errors. |
@@ -32,7 +33,7 @@ the profile remains available as a read-only MCP resource.
 
 ### How did you choose the level of abstraction?
 
-The server is organized around user-meaningful operations and clear ownership
+The server is organized around operations that are meaningful to the user and clear ownership
 boundaries. `analyze_job_posting` is one tool because URL validation, fetching,
 HTML parsing, and structured extraction form one retrieval operation.
 `match_candidate_to_job` is separate because deterministic evidence matching is
@@ -112,13 +113,13 @@ Conceptual workflow boundaries:
 	match_candidate_to_job             match_candidate_to_job
 		   |                                 |
 		   v                                 v
-	   Tailored letter                 Generate 2-4 topics
-							  |
-							  v
-						 search_pubmed (3-5 each)
-							  |
-							  v
-						      Synthesis
+	   Tailored letter                 Generate 2-4 search queries
+							                 |
+										     v
+									 search_pubmed (3-5 each)
+										     |
+										     v
+										  Return interview prep
 ```
 
 ### `interview_prep` prompt
@@ -208,7 +209,3 @@ The server uses the official MCP Python SDK v2 API (`mcp==2.2.0`) with
 `MCPServer` and `@mcp.tool`, not the deprecated v1 `FastMCP` API. Tests use the
 SDK's in-process `Client(mcp)` pattern, so they do not need a subprocess, port,
 or real external web request.
-
-Future tools may use retrieved literature for LLM-led synthesis, interview
-preparation, or research context. Those reasoning tasks remain outside this
-retrieval tool.
