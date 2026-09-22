@@ -4,62 +4,6 @@ This project explores an MCP server for structured career and research preparati
 
 Student name: Francesca Rondinella - NetID fr288
 
-## Assignment Deliverables
-
-| Deliverable | Implementation |
-| --- | --- |
-| GitHub link |  `https://github.com/franitaa/career-intelligence-mcp` |
-| Domain choice | Career intelligence for biomedical and technical job-search preparation, including job extraction, evidence-grounded matching, cover letters, interview preparation, and biomedical literature retrieval. |
-| Best practice 1 | **Separation of retrieval and reasoning:** Python validates and retrieves structured data; Claude performs synthesis and writing. |
-| Best practice 2 | **Security and bounded access:** public HTTP(S)-only job retrieval, SSRF protection, response/time limits, read-only candidate evidence, bounded PubMed requests, and model-readable errors. |
-
-The repository currently has no configured Git remote, so the GitHub URL above
-must be replaced with the actual repository link before submission.
-
-## Reflection
-
-### What challenges did you encounter?
-
-The main challenges were designing reliable extraction from inconsistent job
-posting HTML, preventing server-side URL fetching from reaching private network
-destinations, and keeping generated career claims grounded in explicit
-candidate evidence. PubMed also introduces external failures such as timeouts,
-rate limits, malformed responses, and empty searches. The solution was to use
-bounded requests, validate every redirect, return structured error objects, and
-keep literature retrieval separate from the LLM's interpretation. A practical
-integration challenge was that some MCP clients expose tools but not resources
-or prompts, so the matching tool also loads the local profile internally while
-the profile remains available as a read-only MCP resource.
-
-### How did you choose the level of abstraction?
-
-The server is organized around operations that are meaningful to the user and clear ownership
-boundaries. `analyze_job_posting` is one tool because URL validation, fetching,
-HTML parsing, and structured extraction form one retrieval operation.
-`match_candidate_to_job` is separate because deterministic evidence matching is
-independently testable and should not be mixed with extraction or LLM prose.
-`search_pubmed` is another tool because it has a different external API,
-validation rules, failure modes, and attribution requirements. The
-`cover_letter` and `interview_prep` prompts orchestrate these tools without
-duplicating their logic: Python retrieves and validates data, while Claude
-chooses evidence, reasons about relevance, and writes the final preparation or
-letter.
-
-### What are the limitations, and how would you improve it?
-
-The job parser works best on public, server-rendered pages and may miss content
-that requires JavaScript, authentication, CAPTCHA handling, or unusual page
-layouts. The matcher uses transparent keyword and tag matching, so it does not
-understand synonyms or nuanced experience equivalence. PubMed provides
-citations and abstracts rather than full-text evidence, and the server does not
-provide general company research. The current system also depends on an MCP
-client exposing the relevant tools and, where available, resources and prompts.
-Future improvements could add carefully tested site-specific extraction
-adapters, a reviewed synonym vocabulary for matching, stronger caching and
-rate-limit handling, and an optional general web-search capability with the
-same security and attribution controls. Those additions would require new
-scope and should not weaken the current evidence-grounding boundaries.
-
 ## Current status
 
 The first read-only MCP tool is implemented:
