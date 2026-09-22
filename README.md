@@ -41,30 +41,6 @@ reasoning and writing while preserving the separation between retrieval,
 matching, and synthesis. Claims must remain grounded in the local candidate
 profile loaded by the matcher.
 
-Conceptual workflow boundaries:
-
-```text
-			    Career Intelligence MCP
-				      |
-		   +----------------+----------------+
-		   |                                 |
-	   cover_letter                       interview_prep
-		   |                                 |
-		   v                                 v
-	analyze_job_posting                 analyze_job_posting
-		   |                                 |
-		   v                                 v
-	match_candidate_to_job             match_candidate_to_job
-		   |                                 |
-		   v                                 v
-	   Tailored letter                 Generate 2-4 search queries
-							                 |
-										     v
-									 search_pubmed (3-5 each)
-										     |
-										     v
-										  Return interview prep
-```
 
 ### `interview_prep` prompt
 
