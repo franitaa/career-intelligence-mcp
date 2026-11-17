@@ -2,7 +2,7 @@
 
 This project explores an MCP server for structured career and research preparation, more specifically it helps the user draft a cover letter or prepare for an interview by matching a job posting's URL information to candidate experience.
 
-Student name: Francesca Rondinella - NetID fr288
+Student name: Francesca Rondinella
 
 ## Current status
 
